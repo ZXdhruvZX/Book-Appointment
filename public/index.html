@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+</head>
+
+<style>
+    .Main {
+        position: relative;
+        margin-left: 200px;
+        size: 200px;
+        width: 60%;
+        padding: 45px 0;
+        text-align: center; /* Center align the form content */
+        background-color: #030f27; /* Set the background color to blue */
+        color: white; /* Set text color to white */
+    }
+    .Main .control-group {
+        margin: 30px 0; /* Add space between form elements */
+        
+    }
+
+    .Main .name {
+        background: transparent; /* Make input fields transparent */
+        color: white; /* Set text color to white */
+        border: 1px solid white; /* Add a white border to input fields */
+        border-radius: 0;
+        font-size: 1rem; 
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .Main .Email {
+        background: transparent; /* Make input fields transparent */
+        color: white; /* Set text color to white */
+        border: 1px solid white; /* Add a white border to input fields */
+        border-radius: 0;
+        font-size: 1rem; 
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .Main .health {
+        background: transparent; /* Make input fields transparent */
+        color: white; /* Set text color to white */
+        border: 1px solid white; /* Add a white border to input fields */
+        border-radius: 0;
+        font-size: 1rem; 
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .Main .name::placeholder {
+        color: white; /* Set placeholder text color to white */
+        font-size: 1rem;
+    }
+
+    .Main .Email::placeholder {
+        color: white; /* Set placeholder text color to white */
+        font-size: 1rem;
+    }
+    .Main .health::placeholder {
+        color: white; /* Set placeholder text color to white */
+        font-size: 1rem;
+    }
+
+    .Main .btn {
+        padding: 16px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #607D8B;
+        background: red;
+        border: none;
+        border-radius: 0;
+        transition: .3s;
+        
+    }
+    
+    .Main .btn:hover {
+        background: #030f27; /* Change button background color on hover */
+        color: white; /* Change button text color on hover */
+    }
+
+
+</style>
+
+<body>
+    <h1>Book an appointment</h1>
+
+   
+    <form method="POST" class="Main" action="/post-feedback">
+        <div class="control-group">
+            <input type="text" placeholder="Your Name" class="name" name="client-name" required>
+        </div>
+        <br>
+        <div class="control-group">
+            <input type="text" class="Email"placeholder="Your Email" name="client-email" required>
+        </div>
+        <br>
+        <div class="control-group">
+            <label>Your Health Issue:<br><textarea name="comment" class="health"></textarea></label>
+
+        </div>
+        
+        <br>
+        <div>
+            <button class="btn" type="submit" value="Submit"  >Book</button>
+        </div>
+        <!-- <input type="submit" value="Submit"> -->
+    </form>
+    
+</body>
+</html>

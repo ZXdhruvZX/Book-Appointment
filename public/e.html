@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* Center the form */
+.Main {
+    position: relative;
+    margin-left: 200px;
+    size: 200px;
+    width: 60%;
+    padding: 45px 0;
+    text-align: center; /* Center align the form content */
+    background-color: #030f27; /* Set the background color to blue */
+    color: white; /* Set text color to white */
+}
+
+/* Style the form elements */
+.Main .control-group {
+    margin: 40px 0; /* Add space between form elements */
+    
+}
+
+.Main .form-control {
+    background: transparent; /* Make input fields transparent */
+    color: white; /* Set text color to white */
+    border: 1px solid white; /* Add a white border to input fields */
+    border-radius: 0;
+    font-size: 1rem; 
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Main .form-control::placeholder {
+    color: white; /* Set placeholder text color to white */
+    font-size: 1rem;
+}
+
+.Main .btn {
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #607D8B;
+    background: red;
+    border: none;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.Main .btn:hover {
+    background: #030f27; /* Change button background color on hover */
+    color: white; /* Change button text color on hover */
+}
+
+</style>
+<body>
+       
+    <form class="Main" method="POST"   action="/post-feedback">
+        <div class="control-group">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="control-group">
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="control-group">
+            <input type="text" class="form-control" id="subject" placeholder="Illness name" required="required" data-validation-required-message="Please enter a subject" />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="control-group">
+            <textarea class="form-control" id="message" placeholder="Describe your illness" required="required" data-validation-required-message="Please enter your message"></textarea>
+            <p class="help-block text-danger"></p>
+        </div>
+        <div>
+            <button class="btn" type="submit" id="sendMessageButton" >Book</button>
+        </div>
+    </form>
+    
+</body>
+</html>
