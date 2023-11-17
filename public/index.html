@@ -83,6 +83,53 @@
         color: white; /* Change button text color on hover */
     }
 
+    .Main .Email1 {
+        background: transparent; /* Make input fields transparent */
+        color: white; /* Set text color to white */
+        border: 1px solid white; /* Add a white border to input fields */
+        border-radius: 0;
+        font-size: 1rem; 
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 281px;
+    }
+
+    .Main .Email1 option {
+        color: black; /* Set the text color of the options to black */
+      }
+
+      .Main .age {
+        background: transparent; /* Make input fields transparent */
+        color: white; /* Set text color to white */
+        border: 1px solid white; /* Add a white border to input fields */
+        border-radius: 0;
+        font-size: 1rem; 
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .Main .age::placeholder {
+        color: white; /* Set placeholder text color to white */
+        font-size: 1rem;
+    }
+      .Main .number {
+        background: transparent; /* Make input fields transparent */
+        color: white; /* Set text color to white */
+        border: 1px solid white; /* Add a white border to input fields */
+        border-radius: 0;
+        font-size: 1rem; 
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .Main .number::placeholder {
+        color: white; /* Set placeholder text color to white */
+        font-size: 1rem;
+    }
+
 
 </style>
 
@@ -96,7 +143,27 @@
         </div>
         <br>
         <div class="control-group">
+            <input type="number" placeholder="Your Age" class="age" name="client-age" required>
+        </div>
+        <br>
+        <div class="control-group">
+            <input type="tel" placeholder="Your mob number" class="number" name="client-number" required>
+        </div>
+        <br>
+        <div class="control-group">
             <input type="text" class="Email"placeholder="Your Email" name="client-email" required>
+        </div>
+
+        <label for="doctors">Choose a doctor:</label>
+        <div class="control-group">
+            
+            <select class="Email1" name="My-Doctor">
+                <option value="Mr Khan">Mr Khan</option>
+                <option value="Mrs Prerna">Mrs Prerna</option>
+                <option value="Mr Singh">Mr Singh</option>
+                <option value="Mr Sharma">Mr Sharma</option>
+              </select>
+
         </div>
         <br>
         <div class="control-group">
